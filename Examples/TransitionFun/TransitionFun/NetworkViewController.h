@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WifiSearcher.h"
 
 @interface NetworkViewController : UITableViewController <ECSlidingViewControllerDelegate>
+
+@property (nonatomic,strong) WifiSearcher *searcher;
 
 - (IBAction)menuButtonTapped:(id)sender;
 @end

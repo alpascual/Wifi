@@ -63,6 +63,11 @@
     
     // set navigation buttons
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    
+    // Start searching
+    self.searcher = [[WifiSearcher alloc] init];
+    [self.searcher getBroadcastAddress];
 }
 
 - (void)didReceiveMemoryWarning

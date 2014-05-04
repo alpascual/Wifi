@@ -24,6 +24,7 @@
 		05A4996D1822FEA90051F08E /* MEDynamicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4996C1822FEA90051F08E /* MEDynamicTransition.m */; };
 		05CBD182182DF3B200118119 /* METransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CBD181182DF3B200118119 /* METransitions.m */; };
 		76DA6AFE1916EA3400AF9BE2 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA6AFD1916EA3400AF9BE2 /* NetworkViewController.m */; };
+		76DA6B021916EE2B00AF9BE2 /* WifiSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA6B011916EE2B00AF9BE2 /* WifiSearcher.m */; };
 		DB53A2AC25744123A2240315 /* libPods-TransitionFun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE0E5E204AC4832B02D4341 /* libPods-TransitionFun.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		265D2379E32047049E358830 /* Pods-TransitionFun.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionFun.xcconfig"; path = "../Pods/Pods-TransitionFun.xcconfig"; sourceTree = "<group>"; };
 		76DA6AFC1916EA3400AF9BE2 /* NetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
 		76DA6AFD1916EA3400AF9BE2 /* NetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
+		76DA6B001916EE2B00AF9BE2 /* WifiSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiSearcher.h; sourceTree = "<group>"; };
+		76DA6B011916EE2B00AF9BE2 /* WifiSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiSearcher.m; sourceTree = "<group>"; };
 		7EE0E5E204AC4832B02D4341 /* libPods-TransitionFun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransitionFun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +96,7 @@
 		057DC24F181DE6AE00D15995 = {
 			isa = PBXGroup;
 			children = (
+				76DA6AFF1916EE0900AF9BE2 /* API */,
 				057DC261181DE6AE00D15995 /* TransitionFun */,
 				057DC25A181DE6AE00D15995 /* Frameworks */,
 				057DC259181DE6AE00D15995 /* Products */,
@@ -153,6 +157,16 @@
 				057DC269181DE6AE00D15995 /* Wifi-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76DA6AFF1916EE0900AF9BE2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				76DA6B001916EE2B00AF9BE2 /* WifiSearcher.h */,
+				76DA6B011916EE2B00AF9BE2 /* WifiSearcher.m */,
+			);
+			name = API;
+			path = ../../API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,7 @@
 			files = (
 				05CBD182182DF3B200118119 /* METransitions.m in Sources */,
 				057DC26C181DE6AE00D15995 /* MEAppDelegate.m in Sources */,
+				76DA6B021916EE2B00AF9BE2 /* WifiSearcher.m in Sources */,
 				05629E92181F4DA200A88F6C /* MEFoldAnimationController.m in Sources */,
 				057DC268181DE6AE00D15995 /* main.m in Sources */,
 				05A4996D1822FEA90051F08E /* MEDynamicTransition.m in Sources */,
