@@ -87,4 +87,51 @@
     [self.slidingViewController anchorTopViewToRightAnimated:YES];
 }
 
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0; //self.transitions.all.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"TransitionCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+//    NSString *transition = self.transitions.all[indexPath.row][@"name"];
+//    
+//    cell.textLabel.text = transition;
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // hack to get selectedBackgroundView's presentation layer to update after rotation.
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    [cell.selectedBackgroundView.layer removeAllAnimations];
+//    
+//    NSDictionary *transitionData = self.transitions.all[indexPath.row];
+//    id<ECSlidingViewControllerDelegate> transition = transitionData[@"transition"];
+//    if (transition == (id)[NSNull null]) {
+//        self.slidingViewController.delegate = nil;
+//    } else {
+//        self.slidingViewController.delegate = transition;
+//    }
+//    
+//    NSString *transitionName = transitionData[@"name"];
+//    if ([transitionName isEqualToString:METransitionNameDynamic]) {
+//        self.slidingViewController.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGestureTapping | ECSlidingViewControllerAnchoredGestureCustom;
+//        self.slidingViewController.customAnchoredGestures = @[self.dynamicTransitionPanGesture];
+//        [self.navigationController.view removeGestureRecognizer:self.slidingViewController.panGesture];
+//        [self.navigationController.view addGestureRecognizer:self.dynamicTransitionPanGesture];
+//    } else {
+//        self.slidingViewController.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGestureTapping | ECSlidingViewControllerAnchoredGesturePanning;
+//        self.slidingViewController.customAnchoredGestures = @[];
+//        [self.navigationController.view removeGestureRecognizer:self.dynamicTransitionPanGesture];
+//        [self.navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
+//    }
+}
+
 @end
